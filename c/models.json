@@ -1,0 +1,44 @@
+{
+  "models": [
+    {
+      "id": "glm-5.2-moe",
+      "name": "GLM-5.2 (744B MoE)",
+      "num_layers": 75,
+      "hidden_dim": 4096,
+      "num_experts": 256,
+      "active_experts_per_tok": 8,
+      "default_precision": "int4",
+      "mtp_head_precision": "int8"
+    },
+    {
+      "id": "deepseek-v3-moe",
+      "name": "DeepSeek-V3 (671B MoE)",
+      "num_layers": 61,
+      "hidden_dim": 7168,
+      "num_experts": 256,
+      "active_experts_per_tok": 8,
+      "default_precision": "int4",
+      "mtp_head_precision": "int8"
+    },
+    {
+      "id": "mixtral-8x7b",
+      "name": "Mixtral 8x7B MoE",
+      "num_layers": 32,
+      "hidden_dim": 4096,
+      "num_experts": 8,
+      "active_experts_per_tok": 2,
+      "default_precision": "int4",
+      "mtp_head_precision": "int4"
+    },
+    {
+      "id": "olmoe-1b-7b",
+      "name": "OLMoE 1B-7B",
+      "num_layers": 16,
+      "hidden_dim": 2048,
+      "num_experts": 64,
+      "active_experts_per_tok": 8,
+      "default_precision": "int4",
+      "mtp_head_precision": "int4"
+    }
+  ]
+}

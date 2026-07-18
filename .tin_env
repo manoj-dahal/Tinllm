@@ -1,0 +1,8 @@
+# TinLLM Auto-Tuned Environment Settings
+export OMP_NUM_THREADS=2
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+export DIRECT=1
+export URING=1
+export PIPE=1
+export PIPE_WORKERS=2
